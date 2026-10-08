@@ -211,7 +211,7 @@ def check_fields(actual: JsonObject, expected: JsonObject, step: str) -> None:
 def main() -> int:
     client = SampleApisCoffeeClient()
     marker = uuid4().hex[:8]
-    created_id = 999999
+    created_id = None
     try:
         print("1. GET список горячих напитков")
         drinks = client.list_drinks()
